@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+:root {
+    --colorPrimary: #535971;
+    --colorSecondary: #FF5374;
+    --colorLight: #EFEFEF;
+    --colorText: #4E4958;
+    --colorSpan: #C1BCCC;
+    --colorLine: #E6E6F0;
+    --colorInput: #FAFAFC;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--colorText);
+    background-color: var(--colorLight);
+}
+
+h1, h2, h3, legend, button {
+    font-family: 'Staatliches', cursive;
+}
+
+h2 {
+    color: var(--colorPrimary);
+}

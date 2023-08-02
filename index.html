@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/global/theme.css" />
+    <link rel="stylesheet" href="/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <title>Formulário Intermediário</title>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <h1>Mentoria</h1>
+        <p>
+          Preencha o formulário abaixo para <br />
+          agendar a sua mentoria
+        </p>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        <form action="/" method="get" id="my-form">
+          <fieldset>
+            <legend>Informações pessoais</legend>
+
+            <div class="input-wrapper">
+              <div class="multi-input-wrapper">
+                <div>
+                  <label for="firstName">Nome</label>
+                  <input type="text" id="firstName" name="firstName" />
+                </div>
+
+                <div>
+                  <label for="lastName">sobrenome</label>
+                  <input type="text" id="lastName" name="lastName" />
+                </div>
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="email"
+                >E-mail <span>(digite um email válido)</span></label
+              >
+              <input type="email" name="email" id="email" />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="password"
+                >Senha <span>(mínimo de 6 caracteres)</span></label
+              >
+              <input type="password" name="password" id="password" />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Informações do mentor</legend>
+
+            <div class="input-wrapper">
+              <label for="mentor"
+                >Nome do seu mentor <span>(só o primeiro nome)</span></label
+              >
+              <input type="text" name="mentor" id="mentor" />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Seus horários disponíveis</legend>
+
+            <div class="input-wrapper">
+              <h3>Primeira mentoria</h3>
+              <div class="wrapper-date">
+                <div>
+                  <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+                  <input type="date" name="date" id="date" />
+                </div>
+
+                <div>
+                  <label for="of">Das</label>
+                  <input type="time" name="ofdate" id="of" />
+                </div>
+
+                <div>
+                  <label for="Das">Até</label>
+                  <input type="time" name="untildate" id="until" />
+                </div>
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <h3>Segunda mentoria</h3>
+              <div class="wrapper-date">
+                <div>
+                  <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+                  <input type="date" id="date" name="date" />
+                </div>
+
+                <div>
+                  <label for="of">Das</label>
+                  <input type="time" id="ofdate" name="ofdate"/>
+                </div>
+
+                <div>
+                  <label for="untildate">Até</label>
+                  <input type="time" id="untildate" name="untildate" />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="wrapper">
+        <section>
+          <button type="submit" form="my-form">Salvar</button>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
